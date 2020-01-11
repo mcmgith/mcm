@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+        'Lucida Grande', 'Lucida Sans Unicode',
+        Geneva, Verdana, sans-serif;
+    line-height: 1.8rem;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.pimg1 {
+    background-image: url(../img/1.jpg);
+    height: 100vh;
+    z-index: -1;
+}
+
+.pimg2 {
+    background-image: url(../img/dom_les_uedinenie_122151_1600x1200.jpg);
+    min-height: 600px;
+}
+
+.pimg3 {
+    background-image: url(../img/nastol.com.ua-313935.jpg);
+    min-height: 600px;
+}
+
+.pimg1,
+.pimg2,
+.pimg3 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: .7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    height: 100%;
+    /* padding: 50px 80px;
+    text-align: center;
+    transition: 3s; */
+}
+
+.section-light {
+    
+    background-color: rgb(36, 43, 48);
+    color: #666;
+}
+
+.section-dark {
+    background-color: rgb(36, 43, 48);
+    color: #ddd;
+   
+}
+
+.ptext {
+    font-size: 2.8rem;
+    line-height: 1.6em;
+    color: Cornsilk;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    text-align: center;
+    font-family: 'Major Mono Display', monospace;
+    
+    
+}
+
+.ptext1{
+    font-size: 2.8rem;
+    line-height: 1.6em;
+    color: Cornsilk;
+    letter-spacing: 8px;
+    text-align: center;
+}
+
+
+
+.transp {
+    background-color: transparent;
+}
+
+@media only screen and (max-width:568px) {
+    .ptext, .ptext1 {
+        background-color: transparent;
+    }
+}
+
+@media only screen and (max-device-width: 1366px) {
+
+    .pimg1,
+    .pimg2,
+    .pimg3 {
+        background-attachment: scroll;
+    }
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: rgba(134, 55, 55, 0.822);
+    position: fixed;
+    justify-content: flex-end;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: cornsilk;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.navbar a:hover {
+    background-color: cornsilk;
+    color: rgba(134, 55, 55, 0.822);
+}
+
+
+.icon-bar {
+    width: 100%;
+    background-color: rgba(134, 55, 55, 0.822);
+    overflow: auto;
+    \
+}
+
+.icon-bar a {
+    float: left;
+    text-align: center;
+    width: 20%;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: cornsilk;
+    font-size: 36px;
+}
+
+.icon-bar a:hover {
+    background-color: cornsilk;
+    color: rgba(134, 55, 55, 0.822);
+
+}
+
+.navbar-icon {
+    float: right;
+}
+
+
